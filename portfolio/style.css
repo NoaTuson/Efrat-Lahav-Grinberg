@@ -1,0 +1,181 @@
+body {
+	background-image: linear-gradient(to top, #e4aab6, #fff4f4);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+
+h1 {
+	width: 60vw;
+	font-family: "Roboto-Light";
+	src: url(fonts/Roboto-Light.ttf);
+	font-weight: bolder;
+	font-style: italic;
+	font-size: 3em;
+	padding: 20px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+h3 {
+	width: 75vw;
+	font-family: "Roboto-Light";
+	src: url(fonts/Roboto-Light.ttf);
+	text-align: center;
+	font-style: italic;
+	font-weight: lighter;
+}
+
+.gridCard {
+	width: 60vw;
+	display: grid;
+	grid-template-rows: repeat(1, 1fr);
+	grid-template-columns: repeat(1, 1fr);
+	justify-content: center;
+	align-items: center;
+	margin-top: 2.5rem;
+}
+
+.card {
+	width: 80vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(to bottom right, #e4aab6, #fff4f4);
+	box-shadow: 0px 5.5px 15px rgb(49, 36, 10);
+	border-radius: 10px;
+	margin: 0.5em;
+	margin-bottom: 3.5rem;
+}
+
+.card img {
+	width: 750px;
+	margin-top: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 5.5px 15px rgb(49, 36, 10);
+}
+
+.cardbtn {
+	width: 50px;
+	font-size: 18px;
+	text-decoration: none;
+	color: #0d0d0d;
+	text-align: center;
+	border-radius: 15px;
+	margin: 8px;
+	padding: 8px;
+	font-family: "Roboto-Light";
+	src: url(fonts/Roboto-Light.ttf);
+	font-weight: bolder;
+	font-style: italic;
+	box-shadow: 0px 10px 10px rgba(49, 36, 10, 0.481);
+	transition: all 0.5s;
+}
+
+.cardbtn:hover {
+	background-color: #fff, #efd7bc;
+	font-size: 20px;
+	color: #0d0d0d;
+	border: 3px solid #f2f2f2;
+	border-radius: 15px;
+}
+
+.card a {
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.card p {
+	padding: 10px;
+}
+
+.card p {
+	font-size: 23px;
+	font-family: "Roboto-Light";
+	src: url(fonts/Roboto-Light.ttf);
+	text-align: center;
+	font-style: italic;
+	font-weight: lighter;
+	border: 2px solid #fff, #efd7bc, #d4b176;
+	border-radius: 20px;
+}
+
+.card h5 {
+	font-size: 30px;
+	font-family: "Roboto-Light";
+	src: url(fonts/Roboto-Light.ttf);
+	text-align: center;
+	font-style: italic;
+	font-weight: bolder;
+}
+
+footer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(#fff4f4, #e4aab6);
+	border-radius: 8px;
+}
+
+footer h6 {
+	color: #6e6570;
+	font-size: 10px;
+}
+
+footer svg {
+	width: 40px;
+	height: 40px;
+	margin: 10px;
+	padding: 10px, 10px;
+	border: 2px solid #f2f2f2;
+	border-radius: 50%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+	.card img {
+		width: 250px;
+		margin-top: 20px;
+		border-radius: 10px;
+		box-shadow: 0px 5.5px 15px rgb(49, 36, 10);
+	}
+}
+
+@media screen and (min-width: 600px) and (max-width: 1500px) {
+	img {
+		width: 10vw;
+		padding: 0px;
+		margin: 0;
+	}
+
+	.card img {
+		width: 400px;
+		margin-top: 20px;
+		border-radius: 10px;
+		box-shadow: 0px 5.5px 15px rgb(49, 36, 10);
+	}
+
+	.gridCard {
+		width: 75vw;
+		display: grid;
+		grid-template-rows: repeat(1, 1fr);
+		grid-template-columns: repeat(1, 1fr);
+		justify-content: center;
+		align-items: center;
+		margin-top: 2.5rem;
+	}
+
+	.card {
+		width: 70vw;
+		border-radius: 10px;
+		margin: 0.5rem;
+		margin-bottom: 3.5rem;
+	}
+}
