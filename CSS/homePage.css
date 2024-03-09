@@ -1,0 +1,250 @@
+body {
+    background-image: linear-gradient(#9453A6, #f2f2f2, #f2cc0f, #f2f2f2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-image: linear-gradient(#9453A6, #f2cc0f);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img {
+    width: 4vw;
+    padding: 0px;
+    margin: 0;
+
+}
+
+li {
+    width: 8em;
+    font-size: 1.2em;
+    text-align: center;
+    border-radius: 15px;
+    margin: 0.2em;
+    padding: 8px;
+    font-family: 'Pattaya';
+    src: url(fonts/Pattaya-Regular.ttf);
+    transition: all 2s;
+
+}
+
+li :hover {
+    background-color: #9453a6;
+    font-size: 1.3em;
+    border: 2px solid #f2cc0f;
+    border-radius: 15px;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    width: 65vw;
+    margin: 5px;
+}
+
+.carousel h1 {
+    width: 30vw;
+    border-radius: 50%;
+    background-image: linear-gradient(#9453A6, #f2cc0f);
+    color: #f2f2f2;
+    border: 2px solid #f2cc0f;
+    font-size: 2rem;
+}
+
+h1 {
+    width: 60vw;
+    font-family: 'Pattaya';
+    src: url(fonts/Pattaya-Regular.ttf);
+    font-size: 3em;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h3 {
+    width: 75vw;
+    font-family: 'Roboto-Light';
+    src: url(fonts/Roboto-Light.ttf);
+    font-size: 1.4em;
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+
+
+.gridCard {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.card {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#9453A6, #f2f2f2, #f2cc0f, #f2f2f2);
+    border: 3px solid #f2cc0f;
+    border-radius: 10px;
+    margin: 0.5em;
+}
+
+.card img {
+    padding: 5px;
+}
+
+.cardbtn {
+    width: 15em;
+    font-size: 1em;
+    text-decoration: none;
+    color: #0d0d0d;
+    text-align: center;
+    border: 3px solid #f2cc0f;
+    border-radius: 15px;
+    margin: 8px;
+    padding: 8px;
+    font-family: 'Pattaya';
+    src: url(fonts/Pattaya-Regular.ttf);
+    transition: all 1s;
+}
+
+.cardbtn:hover {
+    background-color: #f2cc0f;
+    font-size: 1.2em;
+    color: #0d0d0d;
+    border: 3px solid #f2f2f2;
+    border-radius: 15px;
+}
+
+.card a {
+    width: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card p {
+    padding: 10px;
+}
+
+.card p,
+.card h5 {
+    width: 15em;
+    font-size: 1em;
+    font-family: 'Roboto-Light';
+    src: url(fonts/Roboto-Light.ttf);
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    background-color: #f2cc0f;
+    border: 2px solid #9453a6;
+    border-radius: 20px;
+}
+
+.card h5 {
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#9453A6, #f2cc0f);
+    border-radius: 8px;
+}
+
+footer h6 {
+    color: #9453A6;
+    font-size: 10px;
+}
+
+footer svg {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    padding: 10px, 10px;
+    border: 2px solid #f2f2f2;
+    border-radius: 50%;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 950px) {
+    img {
+        width: 10vw;
+        padding: 0px;
+        margin: 0;
+    }
+
+    .gridCard {
+        width: 60vw;
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    .card {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(#9453A6, #f2f2f2, #f2cc0f, #f2f2f2);
+        border: 3px solid #f2cc0f;
+        border-radius: 10px;
+        margin: 0.5rem;
+    }
+
+    .card a {
+        width: 10em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card p,
+    .card h5 {
+        width: 70vw;
+        font-size: 1em;
+        font-family: 'Roboto-Light';
+        src: url(fonts/Roboto-Light.ttf);
+        text-align: center;
+        font-style: italic;
+        font-weight: lighter;
+        background-color: #f2cc0f;
+        border: 2px solid #9453a6;
+        border-radius: 20px;
+    }
+
+    .card p {
+        padding: 10px;
+    }
+
+}
