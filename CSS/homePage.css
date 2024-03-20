@@ -1,5 +1,5 @@
 body {
-	background-image: linear-gradient(#ecb8c3, #f0d8d8);
+	background-color: #fff;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -8,7 +8,7 @@ body {
 
 header {
 	width: 100%;
-	background-image: linear-gradient(#e4aab6, #fff4f4);
+	background-color: #c9ad61;
 	border-radius: 8px;
 	display: flex;
 	flex-direction: row;
@@ -61,8 +61,8 @@ li:hover {
 }
 
 h1 {
-	width: 50vw;
-	font-family: "Bona Nova", serif;
+	width: 65vw;
+	font-family: "Heebo", serif;
 	font-weight: 550;
 	font-style: normal;
 	font-size: 3em;
@@ -70,15 +70,26 @@ h1 {
 	margin: 0 auto;
 	text-align: center;
 }
-
-h3 {
+h2 {
 	width: 75vw;
-	font-family: "Bona Nova", serif;
+	font-family: "Heebo", serif;
 	font-weight: 400;
 	font-size: 27px;
 	padding: 25px;
 	text-align: center;
 	font-style: italic;
+	font-weight: lighter;
+}
+
+h3 {
+	width: 75vw;
+	font-family: "Heebo", serif;
+	font-weight: 400;
+	font-size: 27px;
+	padding: 25px;
+	text-align: center;
+	font-style: italic;
+	background-color:#c9ad61;
 	font-weight: lighter;
 	box-shadow: 0px 0px 10px rgba(49, 36, 10, 0.481);
 }
@@ -100,7 +111,7 @@ h3 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-image: linear-gradient(to bottom right, #e4aab6, #fff4f4);
+	background-color: #c9ad61;
 	box-shadow: 0px 5.5px 15px rgb(49, 36, 10);
 	border-radius: 10px;
 	margin: 0.5em;
@@ -205,12 +216,12 @@ h3 {
 	}
 
 	.card img {
-	width: 15rem;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	border-radius: 10%;
-	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.481);
-}
+		width: 15rem;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		border-radius: 10%;
+		box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.481);
+	}
 
 	.gridCard {
 		width: 60vw;
