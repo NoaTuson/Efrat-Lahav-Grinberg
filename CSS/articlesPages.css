@@ -1,5 +1,5 @@
 body {
-	background-image: linear-gradient(#ecb8c3, #f0d8d8);
+	background-color: #fff;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -8,12 +8,28 @@ body {
 
 header {
 	width: 100%;
-	background-image: linear-gradient(#e4aab6, #fff4f4);
-	border-radius: 8px;
+	background-color: #c9ad61;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+}
+
+svg {
+	width: 35px;
+	height: 35px;
+	padding: 2px;
+	font-family: "Heebo", serif;
+	font-weight: 400;
+	border-radius: 50%;
+	box-shadow: 0px 10px 10px rgba(49, 36, 10, 0.481);
+	transition: all 0.5s;
+}
+
+svg:hover {
+	width: 45px;
+	height: 45px;
+	color: #0d0d0d;
 }
 
 img {
@@ -24,21 +40,14 @@ img {
 	box-shadow: 0px 10px 10px rgba(49, 36, 10, 0.481);
 }
 
-.card-img-top {
-	width: 25rem;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	border-radius: 10%;
-	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.481);
-}
+
 
 li {
 	font-size: 1.2rem;
 	text-align: center;
-	border-radius: 15px;
 	margin: 1rem;
 	padding: 8px;
-	font-family: "Bona Nova", serif;
+	font-family: "Heebo", serif;
 	font-weight: 400;
 	font-style: normal;
 	transition: all 0.5s;
@@ -49,14 +58,12 @@ li:hover {
 	background-color: #fff, #efd7bc;
 	font-size: 1.4rem;
 	color: #0d0d0d;
-	border: 3px solid #f2f2f2;
-	border-radius: 15px;
 }
 
 
 h1 {
-	width: 50vw;
-	font-family: "Bona Nova", serif;
+	width: 65vw;
+	font-family: "Heebo", serif;
 	font-weight: 550;
 	font-style: normal;
 	font-size: 3em;
@@ -68,7 +75,7 @@ h1 {
 .gallery {
 	width: 55vw;
 	display: grid;
-	grid-template-rows: repeat(7, 1fr);
+	grid-template-rows: repeat(5, 1fr);
 	grid-template-columns: repeat(3, 1fr);
 	justify-content: center;
 	align-items: center;
@@ -82,32 +89,29 @@ h1 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-image: linear-gradient(to bottom right, #e4aab6, #fff4f4);
+	background-color: #c9ad61;
 	box-shadow: 0px 5.5px 15px rgb(49, 36, 10);
-	border-radius: 10px;
 	margin: 0.5em;
 	margin-bottom: 3.5rem;
 }
 
 .card img {
-	width: 20rem;
+	width: 17rem;
 	margin-top: 40px;
 	margin-bottom: 40px;
-	border-radius: 10%;
+	border-radius: 2%;
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.481);
 }
 
 .cardbtn {
-	font-size: 18px;
+	font-size: 20px;
 	text-decoration: none;
 	color: #0d0d0d;
 	text-align: center;
-	border-radius: 15px;
 	margin: 8px;
 	padding: 8px;
-	font-family: "Bona Nova", serif;
-	font-weight: 400;
-	font-weight: bolder;
+	font-family: "Heebo", serif;
+	font-weight: 500;
 	font-style: italic;
 	box-shadow: 0px 10px 10px rgba(49, 36, 10, 0.481);
 	transition: all 0.5s;
@@ -115,10 +119,8 @@ h1 {
 
 .cardbtn:hover {
 	background-color: #fff, #efd7bc;
-	font-size: 20px;
+	font-size: 22px;
 	color: #0d0d0d;
-	border: 3px solid #f2f2f2;
-	border-radius: 15px;
 }
 
 .card a {
@@ -127,7 +129,7 @@ h1 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: auto;
+	margin: 0 auto;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -137,24 +139,95 @@ h1 {
 }
 
 .card p {
-	font-family: "Bona Nova", serif;
-	font-weight: 400;
-	font-size: 1.5rem;
-	margin: auto;
+	width: 23vw;
+	font-family: "Heebo", serif;
+	font-weight: 350;
+	font-size: 1.3rem;
+	margin: 0 auto;
 	text-align: center;
 	font-style: italic;
-	font-weight: lighter;
 }
 
 .card h5 {
-	font-family: "Bona Nova", serif;
-	font-size: 1.5rem;
+	width: 75vw;
+	font-family: "Heebo", serif;
+	font-size: 1.8rem;
 	font-weight: 400;
 	padding: 20px;
 	text-align: center;
 	font-style: italic;
 	font-weight: lighter;
 	font-weight: bolder;
+	text-decoration: underline;
+}
+
+.footerSocial {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footersvg {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-top: 20px;
+}
+
+h6 {
+	color: #989898;
+	font-family: "Heebo", serif;
+	font-weight: 400;
+	font-size: 1.2rem;
+	padding: 15px;
+	text-align: center;
+	box-shadow: 0px 0px 10px rgba(49, 36, 10, 0.481);
+}
+
+footer a {
+	color: #989898;
+	font-family: "Heebo", serif;
+	font-weight: 400;
+	font-size: 1.1rem;
+	padding: 25px;
+	margin-top: -40px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+
+footer a:hover {
+	color: #373737;
+	font-size: 1.2rem;
+}
+
+.letsTalkfooter {
+	font-size: 1rem;
+	text-align: center;
+	border-radius: 15px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	margin-top: 65px;
+	padding: 8px;
+	font-family: "Heebo", serif;
+	font-weight: 400;
+	font-style: normal;
+	transition: all 0.5s;
+	box-shadow: 0px 10px 10px rgba(49, 36, 10, 0.481);
+}
+
+.letsTalkfooter:hover {
+	background-color: #fff, #efd7bc;
+	font-size: 1.2rem;
+	color: #0d0d0d;
+	border: 3px solid #f2f2f2;
+	border-radius: 15px
 }
 
 
