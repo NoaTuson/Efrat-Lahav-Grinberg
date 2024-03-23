@@ -1,5 +1,5 @@
 body {
-	background-image: linear-gradient(#ecb8c3, #f0d8d8);
+	background-color: #fff;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -8,12 +8,29 @@ body {
 
 header {
 	width: 100%;
-	background-image: linear-gradient(#e4aab6, #fff4f4);
+	background-color: #c9ad61;
 	border-radius: 8px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+}
+
+svg {
+	width: 35px;
+	height: 35px;
+	padding: 2px;
+	font-family: "Heebo", serif;
+	font-weight: 400;
+	border-radius: 50%;
+	box-shadow: 0px 10px 10px rgba(49, 36, 10, 0.481);
+	transition: all 0.5s;
+}
+
+svg:hover {
+	width: 45px;
+	height: 45px;
+	color: #0d0d0d;
 }
 
 img {
@@ -24,6 +41,13 @@ img {
 	box-shadow: 0px 10px 10px rgba(49, 36, 10, 0.481);
 }
 
+.card-img-top {
+	width: 22rem;
+	margin: 40px;
+	border-radius: 50%;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.481);
+}
+
 .letsTalk {
 	font-size: 2rem;
 	text-align: center;
@@ -31,7 +55,7 @@ img {
 	margin: 0 auto;
 	margin-bottom: 40px;
 	padding: 8px;
-	font-family: "Bona Nova", serif;
+	font-family: "Heebo", serif;
 	font-weight: 400;
 	font-style: normal;
 	transition: all 0.5s;
@@ -46,20 +70,13 @@ img {
 	border-radius: 15px;
 }
 
-.welcome {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
 
 li {
 	font-size: 1.2rem;
 	text-align: center;
-	border-radius: 15px;
 	margin: 1rem;
 	padding: 8px;
-	font-family: "Bona Nova", serif;
+	font-family: "Heebo", serif;
 	font-weight: 400;
 	font-style: normal;
 	transition: all 0.5s;
@@ -70,50 +87,6 @@ li:hover {
 	background-color: #fff, #efd7bc;
 	font-size: 1.4rem;
 	color: #0d0d0d;
-	border: 3px solid #f2f2f2;
-	border-radius: 15px;
-}
-
-h1 {
-	width: 50vw;
-	font-family: "Bona Nova", serif;
-	font-weight: 550;
-	font-size: 4rem;
-	padding-top: 40px;
-	margin: 0 auto;
-	text-align: center;
-}
-h2 {
-	width: 55vw;
-	font-family: "Bona Nova", serif;
-	font-size: 2rem;
-	padding: 25px;
-	text-align: center;
-	font-style: italic;
-	font-weight: lighter;
-}
-
-h3 {
-	width: 75vw;
-	font-family: "Bona Nova", serif;
-	font-weight: 400;
-	font-size: 1.5rem;
-	padding: 25px;
-	text-align: center;
-	font-style: italic;
-	font-weight: lighter;
-}
-
-p {
-	width: 70vw;
-	font-family: "Bona Nova", serif;
-	font-size: 27px;
-	padding: 20px;
-	text-align: center;
-	font-style: italic;
-	font-weight: lighter;
-	margin: 1.2rem;
-	box-shadow: 0px 0px 10px rgba(49, 36, 10, 0.481);
 }
 
 .about {
@@ -123,13 +96,115 @@ p {
 	align-items: center;
 }
 
-.about img {
-	width: 25rem;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	border-radius: 50%;
-	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.481);
+.aboutMe{
+	width: 95vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
+
+h1 {
+	width: 65vw;
+	font-family: "Heebo", serif;
+	font-weight: 550;
+	font-style: normal;
+	font-size: 3em;
+	padding: 20px;
+	margin: 0 auto;
+	text-align: center;
+}
+h2 {
+	width: 75vw;
+	font-family: "Heebo", serif;
+	font-weight: 250;
+	font-size: 30px;
+	padding: 25px;
+	text-align: center;
+	font-style: italic;
+}
+
+h3 {
+	width: 75vw;
+	font-family: "Heebo", serif;
+	font-weight: 300;
+	font-size: 21px;
+	padding: 25px;
+	text-align: center;
+	font-style: italic;
+	background-color: #c9ad61;
+	box-shadow: 0px 0px 10px rgba(49, 36, 10, 0.481);
+}
+
+.footerSocial {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footersvg {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-top: 20px;
+}
+
+h6 {
+	color: #989898;
+	font-family: "Heebo", serif;
+	font-weight: 400;
+	font-size: 1.2rem;
+	padding: 15px;
+	text-align: center;
+	box-shadow: 0px 0px 10px rgba(49, 36, 10, 0.481);
+}
+
+footer a {
+	color: #989898;
+	font-family: "Heebo", serif;
+	font-weight: 400;
+	font-size: 1.1rem;
+	padding: 25px;
+	margin-top: -40px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+
+footer a:hover {
+	color: #373737;
+	font-size: 1.2rem;
+}
+
+.letsTalkfooter {
+	font-size: 1rem;
+	text-align: center;
+	border-radius: 15px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	margin-top: 65px;
+	padding: 8px;
+	font-family: "Heebo", serif;
+	font-weight: 400;
+	font-style: normal;
+	transition: all 0.5s;
+	box-shadow: 0px 10px 10px rgba(49, 36, 10, 0.481);
+}
+
+.letsTalkfooter:hover {
+	background-color: #fff, #efd7bc;
+	font-size: 1.2rem;
+	color: #0d0d0d;
+	border: 3px solid #f2f2f2;
+	border-radius: 15px
+}
+
 
 @media screen and (min-width: 320px) and (max-width: 950px) {
 	img {
