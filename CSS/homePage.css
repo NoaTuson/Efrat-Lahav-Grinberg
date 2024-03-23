@@ -9,7 +9,6 @@ body {
 header {
 	width: 100%;
 	background-color: #c9ad61;
-	border-radius: 8px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
