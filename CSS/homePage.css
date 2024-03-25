@@ -101,7 +101,7 @@ h1 {
 h2 {
 	width: 75vw;
 	font-family: "Heebo", serif;
-	font-weight: 250;
+	font-weight: 550;
 	font-size: 30px;
 	padding: 25px;
 	text-align: center;
@@ -111,7 +111,7 @@ h2 {
 h3 {
 	width: 75vw;
 	font-family: "Heebo", serif;
-	font-weight: 300;
+	font-weight: 500;
 	font-size: 25px;
 	padding: 25px;
 	text-align: center;
@@ -309,7 +309,7 @@ footer a:hover {
 	}
 
 	.efratHello img {
-		width: 10rem;
+		width: 8rem;
 	}
 
 	h1 {
@@ -322,8 +322,8 @@ footer a:hover {
 	}
 
 	h3 {
-		font-size: 18px;
-		font-weight: 250;
+		font-size: 13px;
+		font-weight: 550;
 	}
 
 	.card img {
